@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" total="19" passed="17">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite1" duration-ms="833356" started-at="2014-06-29T14:46:54Z" finished-at="2014-06-29T15:00:47Z">
+    <groups>
+      <group name="validatedropping">
+        <method signature="DropFunction.dropStudent()[pri:0, instance:com.selenium.TestMethods.DropFunction@f02081]" name="dropStudent" class="com.selenium.TestMethods.DropFunction"/>
+      </group> <!-- validatedropping -->
+      <group name="ValidateWaitList">
+        <method signature="WaitListFunction.addToWaitList1()[pri:0, instance:com.selenium.TestMethods.WaitListFunction@1945a61]" name="addToWaitList1" class="com.selenium.TestMethods.WaitListFunction"/>
+        <method signature="WaitListFunction.addToWaitList2()[pri:0, instance:com.selenium.TestMethods.WaitListFunction@1945a61]" name="addToWaitList2" class="com.selenium.TestMethods.WaitListFunction"/>
+      </group> <!-- ValidateWaitList -->
+      <group name="ValidateClassEntry">
+        <method signature="SelectClass.selectClass()[pri:0, instance:com.selenium.TestMethods.SelectClass@d9ea8d]" name="selectClass" class="com.selenium.TestMethods.SelectClass"/>
+      </group> <!-- ValidateClassEntry -->
+      <group name="ValidateAffiliation">
+        <method signature="SelectAffiliation.selectAffiliation()[pri:0, instance:com.selenium.TestMethods.SelectAffiliation@b5fb86]" name="selectAffiliation" class="com.selenium.TestMethods.SelectAffiliation"/>
+      </group> <!-- ValidateAffiliation -->
+      <group name="ValidateLogin">
+        <method signature="LoginMethods.validate_first_time_successfullLogin()[pri:0, instance:com.selenium.TestMethods.LoginMethods@b03831]" name="validate_first_time_successfullLogin" class="com.selenium.TestMethods.LoginMethods"/>
+      </group> <!-- ValidateLogin -->
+      <group name="createdata">
+        <method signature="CreateDataExcel.testCF_Add_New_Student_Manually()[pri:0, instance:com.selenium.TestData.CreateDataExcel@925e1f]" name="testCF_Add_New_Student_Manually" class="com.selenium.TestData.CreateDataExcel"/>
+      </group> <!-- createdata -->
+      <group name="futureClassValidation">
+        <method signature="FutureClass.FutureClass1()[pri:0, instance:com.selenium.TestMethods.FutureClass@e61a90]" name="FutureClass1" class="com.selenium.TestMethods.FutureClass"/>
+        <method signature="FutureClass.futureClass2()[pri:0, instance:com.selenium.TestMethods.FutureClass@e61a90]" name="futureClass2" class="com.selenium.TestMethods.FutureClass"/>
+      </group> <!-- futureClassValidation -->
+      <group name="validateaddstudent">
+        <method signature="AddFunction.calladd()[pri:0, instance:com.selenium.TestMethods.AddFunction@12e827b]" name="calladd" class="com.selenium.TestMethods.AddFunction"/>
+      </group> <!-- validateaddstudent -->
+      <group name="ValidateGrading">
+        <method signature="GradingFunction.gradeStudentAttended1()[pri:0, instance:com.selenium.TestMethods.GradingFunction@787691]" name="gradeStudentAttended1" class="com.selenium.TestMethods.GradingFunction"/>
+        <method signature="GradingFunction.gradeStudentAttended2()[pri:0, instance:com.selenium.TestMethods.GradingFunction@787691]" name="gradeStudentAttended2" class="com.selenium.TestMethods.GradingFunction"/>
+        <method signature="GradingFunction.gradeStudentAttended3()[pri:0, instance:com.selenium.TestMethods.GradingFunction@787691]" name="gradeStudentAttended3" class="com.selenium.TestMethods.GradingFunction"/>
+      </group> <!-- ValidateGrading -->
+      <group name="PastClassValidation">
+        <method signature="PastClass.hiddenClass1()[pri:0, instance:com.selenium.TestMethods.PastClass@1392dd5]" name="hiddenClass1" class="com.selenium.TestMethods.PastClass"/>
+        <method signature="PastClass.hiddenClass2()[pri:0, instance:com.selenium.TestMethods.PastClass@1392dd5]" name="hiddenClass2" class="com.selenium.TestMethods.PastClass"/>
+      </group> <!-- PastClassValidation -->
+    </groups>
+    <test name="creatingtestdata" duration-ms="264099" started-at="2014-06-29T14:46:54Z" finished-at="2014-06-29T14:51:18Z">
+      <class name="com.selenium.TestData.DateFunction">
+        <test-method status="FAIL" signature="dateit(java.lang.String)[pri:0, instance:com.selenium.TestData.DateFunction@1c6f55b]" name="dateit" duration-ms="0" started-at="2014-06-29T20:21:18Z" finished-at="2014-06-29T20:21:18Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Method dateit requires 1 parameters but 0 were supplied in the @Test annotation.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Method dateit requires 1 parameters but 0 were supplied in the @Test annotation.
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:198)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:134)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:373)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:450)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1383)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:1075)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1180)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dateit -->
+      </class> <!-- com.selenium.TestData.DateFunction -->
+      <class name="com.selenium.TestData.CreateDataExcel">
+        <test-method status="PASS" signature="testCF_Add_New_Student_Manually()[pri:0, instance:com.selenium.TestData.CreateDataExcel@925e1f]" name="testCF_Add_New_Student_Manually" duration-ms="139421" started-at="2014-06-29T20:16:54Z" finished-at="2014-06-29T20:19:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCF_Add_New_Student_Manually -->
+        <test-method status="PASS" signature="testCF_Add_New_Class_Manually()[pri:0, instance:com.selenium.TestData.CreateDataExcel@925e1f]" name="testCF_Add_New_Class_Manually" duration-ms="124613" started-at="2014-06-29T20:19:13Z" depends-on-methods="com.selenium.TestData.CreateDataExcel.testCF_Add_New_Student_Manually" finished-at="2014-06-29T20:21:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCF_Add_New_Class_Manually -->
+      </class> <!-- com.selenium.TestData.CreateDataExcel -->
+    </test> <!-- creatingtestdata -->
+    <test name="demo1" duration-ms="49940" started-at="2014-06-29T14:51:18Z" finished-at="2014-06-29T14:52:08Z">
+      <class name="com.selenium.Libraries.Selendrioddriver">
+        <test-method status="PASS" signature="startSelendroidServer()[pri:0, instance:com.selenium.Libraries.Selendrioddriver@6a0a21]" name="startSelendroidServer" duration-ms="14013" started-at="2014-06-29T20:21:18Z" finished-at="2014-06-29T20:21:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startSelendroidServer -->
+        <test-method status="PASS" signature="launchFlip()[pri:0, instance:com.selenium.Libraries.Selendrioddriver@6a0a21]" name="launchFlip" duration-ms="35922" started-at="2014-06-29T20:21:32Z" depends-on-methods="com.selenium.Libraries.Selendrioddriver.startSelendroidServer" finished-at="2014-06-29T20:22:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchFlip -->
+      </class> <!-- com.selenium.Libraries.Selendrioddriver -->
+    </test> <!-- demo1 -->
+    <test name="demo2" duration-ms="519235" started-at="2014-06-29T14:52:08Z" finished-at="2014-06-29T15:00:47Z">
+      <class name="com.selenium.TestMethods.DropFunction">
+        <test-method status="PASS" signature="dropStudent()[pri:0, instance:com.selenium.TestMethods.DropFunction@f02081]" name="dropStudent" duration-ms="20237" depends-on-groups="ValidateWaitList" started-at="2014-06-29T20:27:24Z" finished-at="2014-06-29T20:27:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dropStudent -->
+      </class> <!-- com.selenium.TestMethods.DropFunction -->
+      <class name="com.selenium.TestMethods.FutureClass">
+        <test-method status="FAIL" signature="FutureClass1()[pri:0, instance:com.selenium.TestMethods.FutureClass@e61a90]" name="FutureClass1" duration-ms="10" depends-on-groups="PastClassValidation" started-at="2014-06-29T20:30:41Z" finished-at="2014-06-29T20:30:41Z">
+          <exception class="java.lang.IndexOutOfBoundsException">
+            <message>
+              <![CDATA[Index: 3, Size: 0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IndexOutOfBoundsException: Index: 3, Size: 0
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at com.selenium.TestMethods.FutureClass.FutureClass1(FutureClass.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FutureClass1 -->
+        <test-method status="PASS" signature="futureClass2()[pri:0, instance:com.selenium.TestMethods.FutureClass@e61a90]" name="futureClass2" duration-ms="6066" depends-on-groups="PastClassValidation" started-at="2014-06-29T20:30:41Z" finished-at="2014-06-29T20:30:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- futureClass2 -->
+      </class> <!-- com.selenium.TestMethods.FutureClass -->
+      <class name="com.selenium.TestMethods.GradingFunction">
+        <test-method status="PASS" signature="gradeStudentAttended1()[pri:0, instance:com.selenium.TestMethods.GradingFunction@787691]" name="gradeStudentAttended1" duration-ms="17858" depends-on-groups="validateaddstudent" started-at="2014-06-29T20:26:03Z" finished-at="2014-06-29T20:26:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gradeStudentAttended1 -->
+        <test-method status="PASS" signature="gradeStudentAttended2()[pri:0, instance:com.selenium.TestMethods.GradingFunction@787691]" name="gradeStudentAttended2" duration-ms="17600" depends-on-groups="validateaddstudent" started-at="2014-06-29T20:26:20Z" finished-at="2014-06-29T20:26:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gradeStudentAttended2 -->
+        <test-method status="PASS" signature="gradeStudentAttended3()[pri:0, instance:com.selenium.TestMethods.GradingFunction@787691]" name="gradeStudentAttended3" duration-ms="5896" depends-on-groups="validateaddstudent" started-at="2014-06-29T20:26:38Z" finished-at="2014-06-29T20:26:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gradeStudentAttended3 -->
+      </class> <!-- com.selenium.TestMethods.GradingFunction -->
+      <class name="com.selenium.TestMethods.SelectClass">
+        <test-method status="PASS" signature="selectClass()[pri:0, instance:com.selenium.TestMethods.SelectClass@d9ea8d]" name="selectClass" duration-ms="76321" depends-on-groups="ValidateAffiliation" started-at="2014-06-29T20:23:21Z" finished-at="2014-06-29T20:24:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectClass -->
+      </class> <!-- com.selenium.TestMethods.SelectClass -->
+      <class name="com.selenium.TestMethods.LoginMethods">
+        <test-method status="PASS" signature="validate_first_time_successfullLogin()[pri:0, instance:com.selenium.TestMethods.LoginMethods@b03831]" name="validate_first_time_successfullLogin" duration-ms="35214" started-at="2014-06-29T20:22:08Z" finished-at="2014-06-29T20:22:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validate_first_time_successfullLogin -->
+      </class> <!-- com.selenium.TestMethods.LoginMethods -->
+      <class name="com.selenium.TestMethods.SelectAffiliation">
+        <test-method status="PASS" signature="selectAffiliation()[pri:0, instance:com.selenium.TestMethods.SelectAffiliation@b5fb86]" name="selectAffiliation" duration-ms="37877" depends-on-groups="ValidateLogin" started-at="2014-06-29T20:22:43Z" finished-at="2014-06-29T20:23:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectAffiliation -->
+      </class> <!-- com.selenium.TestMethods.SelectAffiliation -->
+      <class name="com.selenium.TestMethods.AddFunction">
+        <test-method status="PASS" signature="calladd()[pri:0, instance:com.selenium.TestMethods.AddFunction@12e827b]" name="calladd" duration-ms="85481" depends-on-groups="ValidateClassEntry" started-at="2014-06-29T20:24:37Z" finished-at="2014-06-29T20:26:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calladd -->
+      </class> <!-- com.selenium.TestMethods.AddFunction -->
+      <class name="com.selenium.TestMethods.PastClass">
+        <test-method status="PASS" signature="hiddenClass1()[pri:0, instance:com.selenium.TestMethods.PastClass@1392dd5]" name="hiddenClass1" duration-ms="158031" depends-on-groups="validatedropping" started-at="2014-06-29T20:27:45Z" finished-at="2014-06-29T20:30:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hiddenClass1 -->
+        <test-method status="PASS" signature="hiddenClass2()[pri:0, instance:com.selenium.TestMethods.PastClass@1392dd5]" name="hiddenClass2" duration-ms="18269" depends-on-groups="validatedropping" started-at="2014-06-29T20:30:23Z" finished-at="2014-06-29T20:30:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hiddenClass2 -->
+      </class> <!-- com.selenium.TestMethods.PastClass -->
+      <class name="com.selenium.TestMethods.WaitListFunction">
+        <test-method status="PASS" signature="addToWaitList1()[pri:0, instance:com.selenium.TestMethods.WaitListFunction@1945a61]" name="addToWaitList1" duration-ms="24670" depends-on-groups="ValidateGrading" started-at="2014-06-29T20:26:44Z" finished-at="2014-06-29T20:27:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToWaitList1 -->
+        <test-method status="PASS" signature="addToWaitList2()[pri:0, instance:com.selenium.TestMethods.WaitListFunction@1945a61]" name="addToWaitList2" duration-ms="15674" depends-on-groups="ValidateGrading" started-at="2014-06-29T20:27:09Z" finished-at="2014-06-29T20:27:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToWaitList2 -->
+      </class> <!-- com.selenium.TestMethods.WaitListFunction -->
+    </test> <!-- demo2 -->
+  </suite> <!-- Suite1 -->
+</testng-results>

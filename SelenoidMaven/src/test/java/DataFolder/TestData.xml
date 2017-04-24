@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Element> 
+	<page name='Login1'>	
+		<uiobject name="UserName_EditBox" type="text"> </uiobject>
+		<uiobject name="Password_EditBox" type="text">abc</uiobject>
+
+	</page>
+
+	<page name='Login2'>
+		<uiobject name="UserName_EditBox" type="text">demo1</uiobject>
+		<uiobject name="Password_EditBox" type="text"> </uiobject>
+	</page>
+
+	<page name='Login3'>
+		<uiobject name="UserName_EditBox" type="text"> </uiobject>
+		<uiobject name="Password_EditBox" type="text"> </uiobject>
+	</page>
+
+	<page name='Login4'>
+		<uiobject name="UserName_EditBox" type="text">xyzzz</uiobject>
+		<uiobject name="Password_EditBox" type="text">demo1</uiobject>
+	</page>
+
+	<page name='Login5'>
+		<uiobject name="UserName_EditBox" type="text">demo1</uiobject>
+		<uiobject name="Password_EditBox" type="text">demo1</uiobject>
+	</page>
+
+</Element>

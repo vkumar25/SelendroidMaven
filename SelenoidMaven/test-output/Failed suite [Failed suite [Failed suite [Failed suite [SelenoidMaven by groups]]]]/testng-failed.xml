@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Failed suite [Failed suite [Failed suite [Failed suite [SelenoidMaven by groups]]]]]">
+  <test name="GRP-launch(failed)(failed)(failed)(failed)(failed)">
+    <groups>
+      <run>
+        <include name="launch"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.sele.Class1">
+        <methods>
+          <include name="startSelendroidServer"/>
+        </methods>
+      </class> <!-- com.sele.Class1 -->
+    </classes>
+  </test> <!-- GRP-launch(failed)(failed)(failed)(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Failed suite [Failed suite [Failed suite [SelenoidMaven by groups]]]]] -->

@@ -1,0 +1,222 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>package1</groupId>
+  <artifactId>SelenoidMaven</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+  
+  <name>Name1</name>
+  
+   <url>http://maven.apache.org</url>
+
+   <properties>
+   <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+   </properties>
+
+
+
+<description>
+A library for easily accessing CSV, Excel and and other table-like data from Java
+</description>
+<scm>
+<connection>
+scm:svn:https://h2031995.stratoserver.net/svn/OSS/eu.ralph-schuster.csv/tags/csv-2.7.1
+</connection>
+<developerConnection>
+scm:svn:https://h2031995.stratoserver.net/svn/OSS/eu.ralph-schuster.csv/tags/csv-2.7.1
+</developerConnection>
+<url>
+https://h2031995.stratoserver.net/svn/OSS/eu.ralph-schuster.csv/tags/csv-2.7.1
+</url>
+</scm>
+<distributionManagement>
+<site>
+<id>strato-server</id>
+<url>
+scp://h2031995.stratoserver.net/var/www/vhosts/ralph-schuster.eu/download/${project.groupId}.${project.artifactId}/${project.version}
+</url>
+</site>
+</distributionManagement>
+<issueManagement>
+<system>Jira</system>
+<url>http://jira.ralph-schuster.eu/browse/CSV</url>
+</issueManagement>
+<ciManagement>
+<system>bamboo</system>
+<url>http://bamboo.ralph-schuster.eu/browse/CSV</url>
+</ciManagement>
+<developers>
+<developer>
+<id>ralph</id>
+<name>Ralph Schuster</name>
+</developer>
+</developers>
+<contributors>
+<contributor>
+<name>eldn</name>
+</contributor>
+<contributor>
+<name>Andrej Czapszys</name>
+</contributor>
+</contributors>
+
+<dependencies>
+
+<dependency>
+<groupId>eu.ralph-schuster</groupId>
+<artifactId>baselib</artifactId>
+<version>1.2.5</version>
+</dependency>
+
+<dependency>
+<groupId>org.apache.poi</groupId>
+<artifactId>poi</artifactId>
+<version>3.10-FINAL</version>
+</dependency>
+
+<dependency>
+<groupId>org.apache.poi</groupId>
+<artifactId>poi-ooxml</artifactId>
+<version>3.10-FINAL</version>
+</dependency>
+
+<dependency>
+<groupId>commons-lang</groupId>
+<artifactId>commons-lang</artifactId>
+<version>2.5</version>
+</dependency>
+<!--  Test dependencies  -->
+<dependency>
+<groupId>net.sourceforge.javacsv</groupId>
+<artifactId>javacsv</artifactId>
+<version>2.0</version>
+<scope>test</scope>
+</dependency>
+
+
+
+<dependency>
+    <groupId>xml-apis</groupId>
+    <artifactId>xml-apis</artifactId>
+    <version>1.4.01</version>
+</dependency>
+
+
+
+
+<dependency>
+<groupId>net.sf.supercsv</groupId>
+<artifactId>super-csv</artifactId>
+<version>2.2.0</version>
+<scope>test</scope>
+</dependency>
+
+<dependency>
+<groupId>net.sf.opencsv</groupId>
+<artifactId>opencsv</artifactId>
+<version>2.3</version>
+<scope>test</scope>
+</dependency>
+
+<dependency>
+<groupId>genjava</groupId>
+<artifactId>gj-csv</artifactId>
+<version>1.0</version>
+<scope>test</scope>
+</dependency>
+
+<dependency>
+<groupId>org.apache.commons</groupId>
+<artifactId>commons-csv</artifactId>
+<version>1.0-SNAPSHOT</version>
+<scope>test</scope>
+</dependency>
+   <dependency>
+      <groupId>org.testng</groupId>
+      <artifactId>testng</artifactId>
+      <version>6.3.1</version>
+      <scope>test</scope>
+    </dependency>
+      
+      <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-firefox-driver</artifactId>
+      <version>2.41.0</version>
+      </dependency> 
+  
+    <dependency>
+    <groupId>io.selendroid</groupId>
+    <version>0.9.0</version>
+    <artifactId>selendroid-standalone</artifactId>
+    </dependency>
+
+	<dependency>
+    <groupId>io.selendroid</groupId>
+    <version>0.9.0</version>
+    <artifactId>selendroid-client</artifactId>
+	</dependency>
+	</dependencies>
+
+<repositories>
+<repository>
+<id>apache</id>
+<name>Apache Repository</name>
+<releases>
+<enabled>false</enabled>
+<updatePolicy>never</updatePolicy>
+<checksumPolicy>warn</checksumPolicy>
+</releases>
+<snapshots>
+<enabled>true</enabled>
+<updatePolicy>always</updatePolicy>
+<checksumPolicy>warn</checksumPolicy>
+</snapshots>
+<url>
+https://repository.apache.org/content/repositories/snapshots
+</url>
+<layout>default</layout>
+</repository>
+</repositories>
+<build>
+<plugins>
+<plugin>
+<groupId>org.apache.felix</groupId>
+<artifactId>maven-bundle-plugin</artifactId>
+<version>2.3.7</version>
+<extensions>true</extensions>
+<configuration>
+<instructions>
+<Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
+</instructions>
+</configuration>
+</plugin>
+<plugin>
+<groupId>org.apache.maven.plugins</groupId>
+<artifactId>maven-javadoc-plugin</artifactId>
+<configuration>
+<header>
+<![CDATA[
+<a href="${project.url}" target="_new">Visit the ${project.name} Homepage</a>
+]]>
+</header>
+</configuration>
+</plugin>
+</plugins>
+<pluginManagement>
+ <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>2.14.1</version>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>TestNG.xml</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+      </plugin>    
+</plugins>
+</pluginManagement>
+</build>
+
+  
+</project>

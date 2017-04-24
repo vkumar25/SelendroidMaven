@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Failed suite [Suite1]]">
+  <test name="Nopackage(failed)(failed)">
+    <groups>
+      <run>
+        <include name="launch"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.sele.Class1">
+        <methods>
+          <include name="launchFlip"/>
+        </methods>
+      </class> <!-- com.sele.Class1 -->
+    </classes>
+  </test> <!-- Nopackage(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Suite1]] -->

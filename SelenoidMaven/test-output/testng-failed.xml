@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite1]" allow-return-values="true">
+  <test name="creatingtestdata(failed)">
+    <classes>
+      <class name="com.selenium.TestData.DateFunction">
+        <methods>
+          <include name="dateit"/>
+        </methods>
+      </class> <!-- com.selenium.TestData.DateFunction -->
+    </classes>
+  </test> <!-- creatingtestdata(failed) -->
+  <test name="demo2(failed)">
+    <classes>
+      <class name="com.selenium.TestMethods.AddFunction">
+        <methods>
+          <include name="calladd"/>
+        </methods>
+      </class> <!-- com.selenium.TestMethods.AddFunction -->
+      <class name="com.selenium.TestMethods.GradingFunction">
+        <methods>
+          <include name="gradeStudentAttended1"/>
+          <include name="gradeStudentAttended3"/>
+          <include name="gradeStudentAttended2"/>
+        </methods>
+      </class> <!-- com.selenium.TestMethods.GradingFunction -->
+      <class name="com.selenium.TestMethods.LoginMethods">
+        <methods>
+          <include name="validate_first_time_successfullLogin"/>
+        </methods>
+      </class> <!-- com.selenium.TestMethods.LoginMethods -->
+      <class name="com.selenium.TestMethods.PastClass">
+        <methods>
+          <include name="hiddenClass1"/>
+          <include name="hiddenClass2"/>
+        </methods>
+      </class> <!-- com.selenium.TestMethods.PastClass -->
+      <class name="com.selenium.TestMethods.DropFunction">
+        <methods>
+          <include name="dropStudent"/>
+        </methods>
+      </class> <!-- com.selenium.TestMethods.DropFunction -->
+      <class name="com.selenium.TestMethods.FutureClass">
+        <methods>
+          <include name="FutureClass1"/>
+        </methods>
+      </class> <!-- com.selenium.TestMethods.FutureClass -->
+      <class name="com.selenium.TestMethods.SelectClass">
+        <methods>
+          <include name="selectClass"/>
+        </methods>
+      </class> <!-- com.selenium.TestMethods.SelectClass -->
+      <class name="com.selenium.TestMethods.WaitListFunction">
+        <methods>
+          <include name="addToWaitList2"/>
+          <include name="addToWaitList1"/>
+        </methods>
+      </class> <!-- com.selenium.TestMethods.WaitListFunction -->
+      <class name="com.selenium.TestMethods.SelectAffiliation">
+        <methods>
+          <include name="selectAffiliation"/>
+        </methods>
+      </class> <!-- com.selenium.TestMethods.SelectAffiliation -->
+    </classes>
+  </test> <!-- demo2(failed) -->
+</suite> <!-- Failed suite [Suite1] -->

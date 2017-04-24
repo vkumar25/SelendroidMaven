@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SelenoidMaven by packages]">
+  <test name="com.sele(failed)">
+    <classes>
+      <class name="com.sele.Class1">
+        <methods>
+          <include name="searchString"/>
+          <include name="launchFlip"/>
+          <include name="popupDismiss"/>
+          <include name="isCertified"/>
+        </methods>
+      </class> <!-- com.sele.Class1 -->
+    </classes>
+  </test> <!-- com.sele(failed) -->
+</suite> <!-- Failed suite [SelenoidMaven by packages] -->

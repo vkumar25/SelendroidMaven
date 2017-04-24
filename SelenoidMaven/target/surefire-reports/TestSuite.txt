@@ -1,0 +1,100 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 15, Failures: 14, Errors: 0, Skipped: 1, Time elapsed: 139.514 sec <<< FAILURE!
+createData1(com.selenium.TestData.CreateTestData)  Time elapsed: 1.048 sec  <<< FAILURE!
+org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.41.0', revision: '3192d8a6c4449dc285928ba024779344f5423c58', time: '2014-03-27 11:29:39'
+System info: host: 'HP', ip: '192.168.0.104', os.name: 'Windows NT (unknown)', os.arch: 'x86', os.version: '6.2', java.version: '1.7.0_04'
+Driver info: driver.version: RemoteWebDriver
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:127)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:151)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:125)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:640)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:479)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906)
+	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:322)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:301)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:165)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:362)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:568)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.selenium.TestData.CreateTestData.createData1(CreateTestData.java:25)
+
+startSelendroidServer(com.selenium.Libraries.Selendrioddriver)  Time elapsed: 27.529 sec  <<< FAILURE!
+java.lang.RuntimeException: io.selendroid.exceptions.ShellCommandException: An error occured while executing shell command: C:\Program Files\Java\jdk1.7.0_45\bin\jarsigner.exe -sigalg MD5withRSA -digestalg SHA1 -signedjar C:\Users\VINIT\AppData\Local\Temp\resigned-android-driver178967837647764394.apk -storepass android -keystore C:\Users\VINIT\.android\debug.keystore C:\Users\VINIT\AppData\Local\Temp\android-driver178967837647764394.apk androiddebugkey
+	at io.selendroid.io.ShellCommand.exec(ShellCommand.java:53)
+	at io.selendroid.builder.SelendroidServerBuilder.signTestServer(SelendroidServerBuilder.java:274)
+	at io.selendroid.builder.SelendroidServerBuilder.resignApp(SelendroidServerBuilder.java:134)
+	at io.selendroid.server.model.SelendroidStandaloneDriver.initApplicationsUnderTest(SelendroidStandaloneDriver.java:140)
+	at io.selendroid.server.model.SelendroidStandaloneDriver.<init>(SelendroidStandaloneDriver.java:82)
+	at io.selendroid.server.SelendroidStandaloneServer.initializeSelendroidServer(SelendroidStandaloneServer.java:91)
+	at io.selendroid.server.SelendroidStandaloneServer.<init>(SelendroidStandaloneServer.java:65)
+	at io.selendroid.SelendroidLauncher.lauchServer(SelendroidLauncher.java:67)
+	at io.selendroid.SelendroidLauncher.lauchSelendroid(SelendroidLauncher.java:90)
+	at com.selenium.Libraries.Selendrioddriver.startSelendroidServer(Selendrioddriver.java:48)
+
+validate_first_time_successfullLogin(com.selenium.TestMethods.LoginMethods)  Time elapsed: 1.026 sec  <<< FAILURE!
+java.lang.NullPointerException: null
+	at com.selenium.TestMethods.LoginMethods.validate_first_time_successfullLogin(LoginMethods.java:98)
+
+calladd(com.selenium.TestMethods.AddFunction)  Time elapsed: 0.014 sec  <<< FAILURE!
+java.lang.NullPointerException: null
+	at com.selenium.TestMethods.AddFunction.add1(AddFunction.java:28)
+	at com.selenium.TestMethods.AddFunction.calladd(AddFunction.java:20)
+
+selectAffiliation(com.selenium.TestMethods.SelectAffiliation)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: null
+	at com.selenium.TestMethods.SelectAffiliation.selectAffiliation(SelectAffiliation.java:16)
+
+gradeStudentAttended1(com.selenium.TestMethods.GradingFunction)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: null
+	at com.selenium.TestMethods.GradingFunction.gradeStudentAttended1(GradingFunction.java:22)
+
+gradeStudentAttended2(com.selenium.TestMethods.GradingFunction)  Time elapsed: 0.015 sec  <<< FAILURE!
+java.lang.NullPointerException: null
+	at com.selenium.TestMethods.GradingFunction.gradeStudentAttended2(GradingFunction.java:56)
+
+gradeStudentAttended3(com.selenium.TestMethods.GradingFunction)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: null
+	at com.selenium.TestMethods.GradingFunction.gradeStudentAttended3(GradingFunction.java:98)
+
+addToWaitList1(com.selenium.TestMethods.WaitListFunction)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: null
+	at com.selenium.TestMethods.WaitListFunction.addToWaitList1(WaitListFunction.java:17)
+
+dropStudent(com.selenium.TestMethods.DropFunction)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: null
+	at com.selenium.TestMethods.DropFunction.dropStudent(DropFunction.java:17)
+
+hiddenClass1(com.selenium.TestMethods.PastClass)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.IndexOutOfBoundsException: Index: 1, Size: 0
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at com.selenium.TestMethods.PastClass.hiddenClass1(PastClass.java:26)
+
+hiddenClass2(com.selenium.TestMethods.PastClass)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.IndexOutOfBoundsException: Index: 2, Size: 0
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at com.selenium.TestMethods.PastClass.hiddenClass2(PastClass.java:99)
+
+FutureClass1(com.selenium.TestMethods.FutureClass)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.IndexOutOfBoundsException: Index: 3, Size: 0
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at com.selenium.TestMethods.FutureClass.FutureClass1(FutureClass.java:27)
+
+futureClass2(com.selenium.TestMethods.FutureClass)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: null
+	at com.selenium.TestMethods.FutureClass.futureClass2(FutureClass.java:60)
+

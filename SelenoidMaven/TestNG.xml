@@ -1,0 +1,54 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >  
+<suite allow-return-values="true" name="Suite1" verbose="1" >
+<test name="creatingtestdata">
+	<packages>
+      			<package name="com.selenium.TestData"/>
+  			</packages>   
+<classes>
+<class name="com.selenium.TestData.CreateDataExcel"/>
+</classes>
+</test>
+
+  <test name="demo1">
+  			<packages>
+      			<package name="com.selenium.Libraries"/>
+  			</packages>   
+<classes>
+<class name="com.selenium.Libraries.Selendrioddriver"/>
+</classes>
+</test>
+	<test name="demo2">
+<classes>
+<class name="com.selenium.TestMethods.LoginMethods"/>
+<class name="com.selenium.TestMethods.SelectAffiliation"/>
+<class name="com.selenium.TestMethods.SelectClass"/>
+<class name="com.selenium.TestMethods.AddFunction"/>
+<class name="com.selenium.TestMethods.GradingFunction"/>
+<class name="com.selenium.TestMethods.WaitListFunction"/>
+<class name="com.selenium.TestMethods.DropFunction"/>
+<class name="com.selenium.TestMethods.PastClass"/>
+<class name="com.selenium.TestMethods.FutureClass"/>
+
+
+
+<groups>
+        <dependencies>
+           <group depends-on="ValidateLogin" name="ValidateAffiliation"/>
+            <group depends-on="ValidateAffiliation" name="ValidateClassEntry"/>
+            <group depends-on="ValidateClassEntry" name="validateaddstudent"/>
+            <group depends-on="validateaddstudent" name="ValidateGrading"/>
+            <group depends-on="ValidateGrading" name="ValidateWaitList"/>
+            <group depends-on="ValidateWaitList" name="validatedropping"/>
+            <group depends-on="validatedropping" name="PastClassValidation"/>
+            <group depends-on="PastClassValidation" name="futureClassValidation"/>         
+      </dependencies>
+  
+  </groups>
+  
+</classes>
+
+    </test>
+	
+	
+     
+</suite>

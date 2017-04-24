@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>	
+<Element> 
+	<page name='Login1'> 			 
+			    <uiobject name="UserName_EditBox" type="text">//input[@id='ctl00_content_ctrlMobileLogin_txtUserId']</uiobject>			    
+			   	<uiobject name="Password_EditBox" type="text">//input[@id='ctl00_content_ctrlMobileLogin_txtPassword']</uiobject>
+			   	<uiobject name="Submit_Button" type="button">//a[@id='ctl00_content_ctrlMobileLogin_btnMobileLogin']</uiobject>
+			   	<uiobject name="BlankUserId" type="text">//span[contains(text(),'Please enter a user ID.')]</uiobject>
+	</page>
+	
+	<page name='Login2'> 			 
+			    <uiobject name="UserName_EditBox" type="text">//input[@id='ctl00_content_ctrlMobileLogin_txtUserId']</uiobject>			    
+			   	<uiobject name="Password_EditBox" type="text">//input[@id='ctl00_content_ctrlMobileLogin_txtPassword']</uiobject>
+			   	<uiobject name="Submit_Button" type="button">//a[@id='ctl00_content_ctrlMobileLogin_btnMobileLogin']</uiobject>
+			   	<uiobject name="BlankPassword" type="text">//span[contains(text(),'Please enter a password.')]</uiobject>
+	</page>
+	
+	<page name='Login3'> 			 
+			    <uiobject name="UserName_EditBox" type="text">//input[@id='ctl00_content_ctrlMobileLogin_txtUserId']</uiobject>			    
+			   	<uiobject name="Password_EditBox" type="text">//input[@id='ctl00_content_ctrlMobileLogin_txtPassword']</uiobject>
+			   	<uiobject name="Submit_Button" type="button">//a[@id='ctl00_content_ctrlMobileLogin_btnMobileLogin']</uiobject>
+			   	<uiobject name="BlankPassword" type="text">//span[contains(text(),'Please enter a password.')]</uiobject>
+			   	<uiobject name="BlankUserId" type="text">//span[contains(text(),'Please enter a user ID.')]</uiobject>
+	</page>
+	
+	<page name='Login4'> 			 
+			    <uiobject name="UserName_EditBox" type="text">//input[@id='ctl00_content_ctrlMobileLogin_txtUserId']</uiobject>			    
+			   	<uiobject name="Password_EditBox" type="text">//input[@id='ctl00_content_ctrlMobileLogin_txtPassword']</uiobject>
+			   	<uiobject name="Submit_Button" type="button">//a[@id='ctl00_content_ctrlMobileLogin_btnMobileLogin']</uiobject>
+			   	<uiobject name="IncorrectUserID" type="text">//span[contains(text(),'The user ID was not found in this organization.')]</uiobject>
+			   
+	</page>
+	
+	<page name='Login5'> 			 
+			    <uiobject name="UserName_EditBox" type="text">//input[@id='ctl00_content_ctrlMobileLogin_txtUserId']</uiobject>			    
+			   	<uiobject name="Password_EditBox" type="text">//input[@id='ctl00_content_ctrlMobileLogin_txtPassword']</uiobject>
+			   	<uiobject name="Submit_Button" type="button">//a[@id='ctl00_content_ctrlMobileLogin_btnMobileLogin']</uiobject>
+			   	
+			   	
+	</page>
+	
+<page name='Affiliation'> 			 
+			    <uiobject name="AffiliationSlat" type="text">//div[@class='title-float-left-wide slat-button-title-text'][contains(. , 'General')]</uiobject>			    
+			   	<uiobject name="ScheduleTitle" type="text">//h1[@class='title']</uiobject>
+	</page>
+	
+<page name='Class'> 
+    			<uiobject name="Schedule" type="text">//div[@class='branding']/a[@href='/EasyInstructor']</uiobject>
+    			<uiobject name="ClassName" type="text">//span[contains(text(),'"+str+"')]/..</uiobject>    						 
+			    <uiobject name="ClassList" type="text">//li[@id='class']</uiobject>			    
+			   	<uiobject name="Roster" type="text">//a[@class='btn-tab btn btn-default active']</uiobject>
+	</page>
+
+<page name='AddStudent'> 
+    			<uiobject name="AddTab" type="text">//a[contains(text(),'Add')]</uiobject>
+    			<uiobject name="Search" type="text">//a[contains(text(),'Search by Name')]</uiobject>    						 
+			    <uiobject name="UserId" type="text">//input[@id='UserId']</uiobject>			    
+			   	<uiobject name="Button" type="text">//button[@class='btn btn-success']</uiobject>
+			   	<uiobject name="Text1" type="text">//h2[contains(text(),'Search Results')]</uiobject>    						 
+			    <uiobject name="Name" type="text">//div[contains(text(),'pkz"+i+", pkz"+i+" p')]</uiobject>			    
+			   	<uiobject name="FlickStudent" type="text">//section[@id='search-results']/div</uiobject>
+			   	<uiobject name="SuccessTitle" type="text">//span[@class='gritter-title']</uiobject>			    
+			   	<uiobject name="MoreButton" type="text">//a[@id='more-options']</uiobject>
+			   	
+	</page>
+
+<page name='Grading'> 
+    			<uiobject name="Student1" type="text">//dd[contains(text(),'pkz1')]</uiobject>
+    			<uiobject name="Slat1" type="text">//dt[contains(text(),'pkz1')]/../..</uiobject>    						 
+			    <uiobject name="More" type="text">//a[@id='more-options']</uiobject>			    
+			   	<uiobject name="SubmitAttendance" type="text">//a[@id='SubmitAttendance']</uiobject>
+			   	<uiobject name="SuccessTitle1" type="text">//span[@class='gritter-title']</uiobject>    						 
+			    <uiobject name="Status1" type="text">//dt[contains(text(),'pkz1')]/../../div[@class='attendance-wrapper']/span[contains(text(),'Attended')]</uiobject>			    
+			   	<uiobject name="SuccessTitle" type="text">//span[@class='gritter-title']</uiobject>			    
+			   	<uiobject name="MoreButton" type="text">//a[@id='more-options']</uiobject>
+			   	<uiobject name="Student2" type="text">//dd[contains(text(),'pkz2')]</uiobject>
+    			<uiobject name="Slat2" type="text">//dt[contains(text(),'pkz2')]/../..</uiobject>
+    			<uiobject name="Status2" type="text">//dt[contains(text(),'pkz2')]/../../div[@class='attendance-wrapper']/span[contains(text(),'No Show')]</uiobject>
+			    <uiobject name="MarkAllAttended" type="text">//label[@for='allAttended']</uiobject>
+    			<uiobject name="AttendedStatus" type="text">//div[@class='attendance-wrapper']/span[1]</uiobject>
+    				
+	</page>
+	
+
+
+
+<page name='PastClass'> 			 
+			     
+			   	<uiobject name="ClassList" type="text">//li[@id='class']</uiobject>
+			   	<uiobject name="ConfirmButton" type="button">//li[@id='class']/div[2]/div/div/button[@class='btn btn-danger confirm']</uiobject>
+			   	<uiobject name="SelectClass" type="text">//span[contains(text(),'Friday, May 30, 2014')]/../../../div[@class='slider']</uiobject>
+			   	<uiobject name="ListClass" type="text">//h1</uiobject>
+			   	<uiobject name="Student" type="text">//dl[@class='student jsStudent']</uiobject>
+			   	<uiobject name="MoreOptions" type="text">//a[@id='more-options']</uiobject>
+			   	<uiobject name="ClassComplete" type="text">//label[@for="classComplete"]</uiobject>
+			   	<uiobject name="Confirm" type="button">//button[contains(text(),'Confirm')]</uiobject>
+	</page>
+	
+
+
+<page name='FutureClass'> 			 
+			    <uiobject name="ClassByDate" type="text">//span[@class='date']</uiobject>			    
+			   	<uiobject name="MoreOption" type="text">//a[contains(text(),'More')]</uiobject>
+			   	<uiobject name="HomeBrand" type="text">//div[@class='branding']/a[@href='/EasyInstructor']</uiobject>
+			   	<uiobject name="SelectClass" type="text">//span[contains(text(),'Friday, May 30, 2014')]/../../../div[@class='slider']</uiobject>
+	</page>
+
+		
+</Element>
+
